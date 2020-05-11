@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <title>Weather Journal by Gloria</title>
+</head>
+<body>
+  <div id="main-app">
+    <div class="container">
+      <div class ="holder headline">
+        <h3><span> Weather  ⛅  Journal</span></h3>
+      </div>
+        <div class="holder zip">
+          <label for="zip">Enter your Zipcode</label>
+          <input type="text" id="zip" placeholder="enter your zip code here">
+        </div>
+        <div class="zip feel-container">
+          <label for="feelings">How do you feel now?</label>
+          <textarea id="feelings" placeholder="enter your feelings"  rows="3" cols="50"></textarea>
+          <div class="btn_holders">
+            <button id="generate" type="submit">Generate report</button>
+            <div class="spinner"></div>
+          </div>
+        </div>
+      <div id="entryHolder-container">
+        <h3 class="title">Recents</h3>
+        <div id="entry-Holder">
+          <div id="date"></div> 
+          <div id="temp"></div>
+          <div id="content"></div>
+          <div id="error"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
